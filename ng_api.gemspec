@@ -7,11 +7,11 @@ require "ng_api/version"
 Gem::Specification.new do |s|
   s.name        = "ng_api"
   s.version     = NgApi::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of NgApi."
-  s.description = "TODO: Description of NgApi."
+  s.authors     = ["mjason"]
+  s.email       = ["tywf91@gmail.com"]
+  s.homepage    = "open.bestng.me"
+  s.summary     = "init api on rails"
+  s.description = "rails api"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
