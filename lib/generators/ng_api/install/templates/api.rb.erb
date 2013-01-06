@@ -1,0 +1,21 @@
+require "helpers"
+
+module <%= app_name %>
+
+  class API < Grape::API
+    prefix "api"
+    format :json
+    formatter :json, Grape::Formatter::Rabl
+
+    helpers Helpers
+
+    resource :demo do
+      get "/", :rabl => "demo" do
+        # @demo = models_object
+        # eg: @demo = User.first
+        @demo = {name: "bestng" } # delete line
+      end
+    end
+  end
+
+end
