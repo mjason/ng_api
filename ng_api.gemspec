@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = NgApi::VERSION
   s.authors     = ["mjason"]
   s.email       = ["tywf91@gmail.com"]
-  s.homepage    = "open.bestng.me"
+  s.homepage    = "http://open.bestng.me"
   s.summary     = "init api on rails"
   s.description = "rails api"
 
@@ -18,5 +18,4 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.0.0"
 
-  s.add_development_dependency "sqlite3"
 end
