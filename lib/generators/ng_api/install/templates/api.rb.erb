@@ -5,12 +5,12 @@ module <%= app_name %>
   class API < Grape::API
     prefix "api"
     format :json
-    formatter :json, Grape::Formatter::Rabl
+    formatter :json, Grape::Formatter::Jbuilder
 
     helpers Helpers
 
     resource :demo do
-      get "/", :rabl => "demo" do
+      get "/", :jbuilder => "demo" do
         # @demo = models_object
         # eg: @demo = User.first
         @demo = {name: "bestng" } # delete line

@@ -9,8 +9,10 @@ module NgApi
       unless defined?(Grape)
         say "adding grape gem to your gemfile"
         append_file "Gemfile", "\n", :force => true
-        gem 'grape', :git => 'https://github.com/intridea/grape.git'
-        gem "grape-rabl"
+        # gem 'grape', :git => 'https://github.com/intridea/grape.git'
+        # gem "grape-rabl"
+        gem 'grape', github: 'intridea/grape', branch: 'frontier'
+        gem 'grape-jbuilder'
       else
         say "Found it!"
       end
